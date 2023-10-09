@@ -14,7 +14,7 @@ let line = document.getElementById('line');
 
 
 
-let points = polyline.getAttribute("points");
+// let points = polyline.getAttribute("points");
 
 // arr.forEach((element)=>{
 //     let el_rect = element.getBoundingClientRect();
@@ -79,14 +79,11 @@ const animate_jobs = ()=>{
 animate_jobs();
 
 
-function setProjectsContainer(){
+function setProjectsContainer(des_offset, img_offset, callback){
     
     let all_projects = document.getElementsByClassName('project');
     let all_descriptions = document.getElementsByClassName('description');
-    let des_offset= 400;
-    let des_offset_ver = 200;
-    let img_offset = 50;
-
+  
     let arr_all_descriptions = Array.from(all_descriptions);
     let arr_all_projects = Array.from(all_projects);
 
@@ -105,23 +102,24 @@ function setProjectsContainer(){
             if(arr_all_projects.indexOf(element)%2!=1){
                 element.style.left = `${-(rect.height+img_offset)}px`;
                 curr_des.style.right = `${-(rect.height+des_offset)}px`;
-                
+                element.classList.add('left');
                 
             }else{
                 element.style.left = `${(rect.height+img_offset)}px`;
                 curr_des.style.left = `${-(rect.height+des_offset)}px`;
-                   
+                element.classList.add('right');
             }
        
         }else{
             if(arr_all_projects.indexOf(element)%2!=1){
                 element.style.left = `${-(rect.width+img_offset)}px`;
                 curr_des.style.right = `${-(rect.width+des_offset)}px`;
+                element.classList.add('left');
                
             }else{
                 element.style.left = `${rect.width+img_offset}px`;
                 curr_des.style.left = `${-(des_offset)}px`;
-                
+                element.classList.add('right');
             }
         }
         // console.log(element.children[0])
@@ -130,7 +128,22 @@ function setProjectsContainer(){
     })
 }
 
-setProjectsContainer();
+// setProjectsContainer(400, 50)
+
+const for740 = window.matchMedia('max-width: 740')
+
+if(for740.matches){
+    setProjectsContainer(200, 30, ()=>{
+
+    });
+}else{
+    setProjectsContainer(400, 50, ()=>{
+        
+    });
+}
+
+
+
 
 // function setBackgroundText(){
 //     let bg_texts_all = document.getElementsByClassName('background_text');
