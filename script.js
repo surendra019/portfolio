@@ -79,68 +79,6 @@ const animate_jobs = ()=>{
 animate_jobs();
 
 
-function setProjectsContainer(des_offset, img_offset, callback){
-    
-    let all_projects = document.getElementsByClassName('project');
-    let all_descriptions = document.getElementsByClassName('description');
-  
-    let arr_all_descriptions = Array.from(all_descriptions);
-    let arr_all_projects = Array.from(all_projects);
-
-    arr_all_projects.forEach((element)=>{
-        
-        var rect = element.getBoundingClientRect();
-        var curr_des = arr_all_descriptions[arr_all_projects.indexOf(element)]
-
-        let w = rect.width;
-        let h = rect.height;
-        // console.log(h)
-        
-        if(w<h){
-            element.children[0].style.width= `${180}px`;
-            element.children[0].style.height= `${400}px`;
-            if(arr_all_projects.indexOf(element)%2!=1){
-                element.style.left = `${-(rect.height+img_offset)}px`;
-                curr_des.style.right = `${-(rect.height+des_offset)}px`;
-                element.classList.add('left');
-                
-            }else{
-                element.style.left = `${(rect.height+img_offset)}px`;
-                curr_des.style.left = `${-(rect.height+des_offset)}px`;
-                element.classList.add('right');
-            }
-       
-        }else{
-            if(arr_all_projects.indexOf(element)%2!=1){
-                element.style.left = `${-(rect.width+img_offset)}px`;
-                curr_des.style.right = `${-(rect.width+des_offset)}px`;
-                element.classList.add('left');
-               
-            }else{
-                element.style.left = `${rect.width+img_offset}px`;
-                curr_des.style.left = `${-(des_offset)}px`;
-                element.classList.add('right');
-            }
-        }
-        // console.log(element.children[0])
-        
-
-    })
-}
-
-// setProjectsContainer(400, 50)
-
-const for740 = window.matchMedia('max-width: 740')
-
-if(for740.matches){
-    setProjectsContainer(200, 30, ()=>{
-
-    });
-}else{
-    setProjectsContainer(400, 50, ()=>{
-        
-    });
-}
 
 
 
