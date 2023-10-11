@@ -670,6 +670,14 @@ footer div#footer-right{
  .description{
     display: none;
  }
+ .project{
+    justify-content: right;
+ }
+ .project img{
+    width: 150px;
+    height: 380px;
+    
+}
     
 }
 @media screen and (max-width: 600px){
@@ -677,7 +685,7 @@ footer div#footer-right{
   
 
     #navbar {
-        padding-top: 20px;
+        /* padding-top: 20px; */
         flex-direction: column;
         /* z-index: 10; */
         /* box-shadow: 0px 20px 100px 20px var(--color_primary); */
@@ -723,6 +731,9 @@ footer div#footer-right{
         font-size: 15px;
         
        
+    }
+    .navbar-left{
+        padding-top: 20px;
     }
     
 }
