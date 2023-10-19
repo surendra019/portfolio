@@ -1,0 +1,92 @@
+#projects{
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 80px;
+    height: fit-content;
+    background-color: black;
+    z-index: 10;
+    
+}
+.project img{
+    width: 200px;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .1px solid grey;
+}
+
+.project{
+    z-index: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+    
+}
+.left .img-name > span{
+    position: absolute;
+    left: -70px;
+    bottom: 100px;
+    font-size: 22px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+.right .img-name > span{
+    position: absolute;
+    right: -70px;
+    bottom: 100px;
+    font-size: 22px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.img-name{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    transition-property: transform;
+    transition-duration: .8s;
+}
+
+.description{
+    width: 50%;
+    height: 80%;
+}
+
+.project-block{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    position: relative;
+}
+
+.project-block:active .img-name{
+    transform: skew(0deg);
+}
+
+.project-block:hover .img-name{
+   
+   transform: skewY(0deg);
+}
+
+
+
+.right > .project-block{
+    flex-direction: row-reverse;
+    
+    
+}
+.overlay{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.533) 40%, transparent);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}

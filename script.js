@@ -90,13 +90,6 @@ animate_jobs();
 
 // }
 
-function blurBg(){
-    let body = document.getElementById('b');
-
-    body.style.filter = "blur(2px)";
-}
-function unblurBG(){
-    let body = document.getElementById('b');
-
-    body.style.filter = "blur(0px)";
+function show_popup(project){
+    
 }

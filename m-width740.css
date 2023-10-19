@@ -1,0 +1,35 @@
+@media screen and (max-width: 740px) {
+    .description{
+       display: none;
+    }
+    .project{
+       justify-content: right;
+    }
+    .left > .project-block{
+       flex-direction: row-reverse;
+   }
+   
+   
+   .left .img-name > span{
+       
+       right: -70px;
+       
+     
+   }
+
+   #intro-text{
+    font-size: 20px;
+   }
+   
+   .background_text{
+       font-size: 50px;
+   }
+   
+   
+    .project img{
+       width: 150px;
+       height: 380px;
+       
+   }
+       
+   }

@@ -1,0 +1,22 @@
+@media screen and (max-width: 500px){
+    #intro-text{
+        font-size: 20px;
+    }
+    #about code{
+        font-size: 10px;
+    }
+    #impossible{
+   
+        font-size: 12px;
+        
+       
+    }
+    .navbar-left{
+        padding-top: 20px;
+    }
+
+    footer div#footer-left{
+        font-size: 12px;
+        }
+    
+}

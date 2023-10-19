@@ -1,0 +1,11 @@
+@media screen and (max-width: 400px){
+    #navbar li {
+        
+        margin: 0px 5px;
+        padding: 20px 2px;
+        
+    }
+    #intro-text{
+        padding-left: 42px;
+    }
+}

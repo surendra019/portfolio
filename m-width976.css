@@ -1,0 +1,17 @@
+@media screen and (max-width: 976px){
+    #about code{
+        font-size: 12px;
+    }
+    
+    footer{
+        flex-direction: column;
+
+    }
+    footer div#footer-left{
+        text-align: center;
+        }
+    footer div#footer-right a{
+        margin: 10px;
+    }
+    
+}
