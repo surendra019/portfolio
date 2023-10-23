@@ -90,6 +90,90 @@ animate_jobs();
 
 // }
 
+let project_class = document.getElementsByClassName('project');
+let project_class_arr = Array.from(project_class)
+
+project_class_arr.forEach((el)=>{
+    el.addEventListener('click', function(){
+        show_popup(el);
+    });
+})
+
+let popup_panel = document.getElementById('popup');
+
 function show_popup(project){
+    popup_panel.style.transform = 'translateX(0%)';
+}
+
+function hide_popup(){
+    popup_panel.style.transform = 'translateX(100%)'
+}
+
+
+
+
+
+
+
+let v_container = document.getElementById('visible-container');
+
+arrange_slides(v_container);
+
+function arrange_slides(visible_contanier){
+    let children = Array.from(visible_contanier.children);
+    let start_translate = 0;
+
+    children.forEach((el)=>{
+        let left_s = children.indexOf(el)*100
+        el.style.left = `${left_s}%`
+        print(el.style.left);
+    })
+
+}
+let counter = 0;
+
+
+
+function slide_left(){
+
+    let img_count = Array.from(v_container.children).length
+    console.log(Math.abs(counter));
+    console.log(Math.abs(img_count));
+
+    if (Math.abs(counter)<Math.abs(img_count)-1){
+        counter--;
+        Array.from(v_container.children).forEach((el)=>{
+            el.style.transform = `translateX(${counter*100}%)`
+            
+            
+        })
     
 }
+}
+
+function slide_right(){
+
+
+    let img_count = Array.from(v_container.children).length
+    console.log(Math.abs(counter));
+    console.log(Math.abs(img_count));
+
+    if (Math.abs(counter)>0){
+        counter++;
+        Array.from(v_container.children).forEach((el)=>{
+            el.style.transform = `translateX(${counter*100}%)`;
+        
+        })
+    }
+}
+
+const setPopupHeight =() =>{
+    let hei = document.documentElement.scrollHeight;
+
+    let popup = document.getElementById('popup');
+
+    popup.style.height = `${hei}px`;
+}
+
+// setPopupHeight()
+

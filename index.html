@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="section-home.css" type="text/css">
     <link rel="stylesheet" href="section-projects.css" type="text/css">
     <link rel="stylesheet" href="section-about.css" type="text/css">
+    <link rel="stylesheet" href="popup.css" type="text/css">
     <link rel="stylesheet" href="m-width1208.css" type="text/css">
     <link rel="stylesheet" href="m-width1010.css" type="text/css">
     <link rel="stylesheet" href="m-width976.css" type="text/css">
@@ -24,52 +25,56 @@
     <link rel="stylesheet" href="m-width500.css" type="text/css">
     <link rel="stylesheet" href="m-width400.css" type="text/css">
     <link rel="stylesheet" href="m-width370.css" type="text/css">
-    
-    
+
+
 </head>
 
 <body id="b">
     <!-- <svg id="main_svg" style ="width: 100%; height: 410%; position: absolute;z-index: -1;">
         <polyline width="100%" height="100%"id="polyline" points="30, 0"
         style="fill:none;stroke:white;stroke-width:1" /> -->
-       
+
     </svg>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="./jquery.codex.js"></script>
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"
+        integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <header>
 
         <nav id="navbar">
-            
+
             <div class="navbar-left">
                 &lbrace;&nbsp;Surendra's Portfolio&nbsp;&rbrace;
             </div>
-            <div class="navbar-right"><ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="files/Surendra saini.pdf">Resume</a></li>
-            </ul>
-        </div>
-            
+            <div class="navbar-right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="files/Surendra saini.pdf">Resume</a></li>
+                </ul>
+            </div>
+
         </nav>
 
     </header>
-    
+
     <section id="home">
         <span class="nav_headings" style="top: 110px;">&gt;&nbsp;Home</span>
         <div class="home_content">
 
             <div id="intro-text">
-                <span>Hii,<br> my name is <span class="myname">Surendra Saini</span><br><span>i am a </span><span id="myjob">Web developer</span></span>
+                <span>Hii,<br> my name is <span class="myname">Surendra Saini</span><br><span>i am a </span><span
+                        id="myjob">Web developer</span></span>
             </div>
             <!-- <div id="lottie_cont">
                 
             </div> -->
         </div>
-        
+
 
     </section>
     <div id="impossible">
@@ -78,48 +83,55 @@
     <section id="projects">
         <span class="background_text">GAMES</span>
         <span class="nav_headings">&gt;&nbsp;Projects</span>
-        <div class="project left" id="pro-1" >
+        <div class="project left" id="pro-1">
             <div class="project-block">
                 <div class="img-name">
                     <div class="overlay"></div>
-                <img  src="iimages/traffic_racer.jpg" alt="">
-                <span>Traffic racer 2d</span>
-            </div>
-            <div class="description">
-                Introducing our 2D Traffic Racer game, a thrilling experience where you hit the open road for an endless driving adventure. Navigate along an infinite, obstacle-free highway, showcasing your driving skills. Sound your horn to announce your presence, apply the brakes for precise control, and activate exhilarating speed boosts to surge ahead. Track your score as you strive for new records on this never-ending road. With its simple mechanics and user-friendly interface, our game promises pure, uninterrupted racing excitement on an endless highway. Get ready to 
-                rev your engine and enjoy the ultimate test of speed and endurance!
-            
-                <ul name="made-using"class="made-using-list">
-                    <li>Godot</li>
-                    <li>gdscript</li>
-                </ul>
-            </div>
-            
+                    <img src="iimages/traffic_racer.jpg" alt="">
+                    <span>Traffic racer 2d</span>
+                </div>
+                <div class="description">
+                    Introducing our 2D Traffic Racer game, a thrilling experience where you hit the open road for an
+                    endless driving adventure. Navigate along an infinite, obstacle-free highway, showcasing your
+                    driving skills. Sound your horn to announce your presence, apply the brakes for precise control, and
+                    activate exhilarating speed boosts to surge ahead. Track your score as you strive for new records on
+                    this never-ending road. With its simple mechanics and user-friendly interface, our game promises
+                    pure, uninterrupted racing excitement on an endless highway. Get ready to
+                    rev your engine and enjoy the ultimate test of speed and endurance!
+
+                    <ul name="made-using" class="made-using-list">
+                        <li>Godot</li>
+                        <li>gdscript</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
-        
 
 
-        <div class="project right" id="pro-2" >
+
+        <div class="project right" id="pro-2">
             <div class="project-block">
                 <div class="img-name">
                     <div class="overlay"></div>
-                <img  src="iimages/htg2.jpg" alt="">
-                <span>Hit the goal</span>
-            </div>
-            <div class="description">
-                "Hit the goal" is a unique twist on the classic bubble shooter genre. In this 2D mobile game, player control a football at the bottom of the screen, aiming to launch it accurately towards a central circular goal while navigating a dynamic field of rotating and animated lines.
+                    <img src="iimages/htg2.jpg" alt="">
+                    <span>Hit the goal</span>
+                </div>
+                <div class="description">
+                    "Hit the goal" is a unique twist on the classic bubble shooter genre. In this 2D mobile game, player
+                    control a football at the bottom of the screen, aiming to launch it accurately towards a central
+                    circular goal while navigating a dynamic field of rotating and animated lines.
 
-                <ul name="made-using"class="made-using-list">
-                    <li>Godot</li>
-                    <li>gdscript</li>
-                </ul>
-            </div>
-            
+                    <ul name="made-using" class="made-using-list">
+                        <li>Godot</li>
+                        <li>gdscript</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
 
-     
+
     </section>
     <section id="about">
         <span class="background_text">ABOUT</span>
@@ -146,22 +158,46 @@
             </div>
             
         </pre>
-        
+
 
     </section>
     <div class="popup-container" id="popup">
-        <div class="popup-content">
-            <span class="close" id="closePopup">&times;</span>
-            <h2>Popup Content</h2>
-            <p>This is your slide-up popup content.</p>
+        <div id="popup-header">
+            <div id="p-header-left">
+                <img onclick="hide_popup()" src="iimages/back_arrow.png" alt="Back">
+            </div>
+            <div id="p-header-right">
+                Hit the Goal
+            </div>
         </div>
+        <div id="popup-body">
+            <div id="popup-body-left">
+                <div id="slideshow-container">
+                    <div id="left-btn" onclick="slide_left()"class="change-img-btns"><img src="iimages/next.png" alt="Previous"></div>
+                    <div id="visible-container">
+                        <img src="iimages/Hit the goal/htg1.jpg" alt="1">
+                        <img src="iimages/Hit the goal/htg2.jpg" alt="2">
+                        <img src="iimages/Hit the goal/htg3.jpg" alt="3">
+                        <img src="iimages/Hit the goal/htg4.jpg" alt="4">
+                        <img src="iimages/Hit the goal/htg5.jpg" alt="5">
+                    </div>
+                    <div id="right-btn" onclick="slide_right()"class="change-img-btns"><img src="iimages/next.png" alt="Next"></div>
+                </div>
+
+            </div>
+            <div id="popup-body-right">
+                
+            </div>
+        </div>
+
+        <div id="popup-links"></div>
     </div>
     <footer>
         <!-- Footer content, you can replace with your own information -->
         <div id="footer-left">
-            &copy; 2023 Surendra saini. All Rights Reserved. | 
-            <a href="#home">Home</a> | 
-            <a href="#projects">Projects</a> | 
+            &copy; 2023 Surendra saini. All Rights Reserved. |
+            <a href="#home">Home</a> |
+            <a href="#projects">Projects</a> |
             <a href="#about">About</a>
         </div>
         <div id="footer-right">
@@ -170,18 +206,18 @@
             <a href=""><img src="iimages/logos/linkedin.svg" alt="linkedin"></a>
         </div>
     </footer>
-        <ul class="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-        </ul>
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
 
     <script src="script.js"></script>
 </body>
