@@ -35,7 +35,7 @@
         style="fill:none;stroke:white;stroke-width:1" /> -->
 
     </svg>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
     <script src="./jquery.codex.js"></script>
 
 
@@ -47,17 +47,21 @@
         <nav id="navbar">
 
             <div class="navbar-left">
-                <div class="head">&lbrace;&nbsp;Surendra's Portfolio&nbsp;&rbrace;</div>
-                
+                <div class="head" id="page_head">&lbrace;&nbsp;Surendra's Portfolio&nbsp;&rbrace;</div>
+                <div class="menu_btn" id="menu_btn">
+                    <img src="iimages/logos/menu_icon.svg" onclick="show_menu()" alt="Menu">
+                </div>
             </div>
             <div class="navbar-right">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="files/Surendra saini.pdf">Resume</a></li>
+                <ul id="menu_ul">
+                    <li><a href="#home" class="nav_btns">Home</a></li>
+                    <li><a href="#projects" class="nav_btns">Projects</a></li>
+                    <li><a href="#about" class="nav_btns">About</a></li>
+                    <li><a href="files/Surendra saini.pdf" class="nav_btns">Resume</a></li>
                 </ul>
+
             </div>
+            
 
         </nav>
 

@@ -23,11 +23,15 @@
         margin: auto;
         width: 100%;
         align-items: center;
+        height: 100vh;
         justify-content: center;
+        transform: translateX(100%);
         flex-direction: column;
         background-color: grey;
-        margin-top: 30px;
-        display: none;
+
+        /* overflow-y: hidden; */
+        position: absolute;
+        /* display: none; */
         /* position: relative; */
         /* left: 800px; */
     }
@@ -42,6 +46,13 @@
     footer div#footer-left{
         font-size: 15px;
     
+    }
+    div.menu_btn img{
+        
+        display: block;
+    }
+    .navbar-left{
+        justify-content: space-evenly;
     }
 
         

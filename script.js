@@ -137,3 +137,34 @@ function hide_popup(){
 
 // // setPopupHeight()
 
+
+
+let menu = document.getElementById('menu_ul');
+let head = document.getElementById('page_head');
+let menu_btn = document.getElementById('menu_btn');
+let navbar = document.getElementById('navbar');
+let body = document.getElementById('b');
+
+let menu_toggled = false
+
+function show_menu(){
+    if (!menu_toggled){
+        menu.style.transform = `translateX(0%)`;
+        head.style.color = 'black';;
+        menu_btn.style.filter = 'invert(100%)';
+        navbar.style.backgroundColor = 'grey';
+        body.style.overflowY = 'hidden';
+        
+    }else{
+        menu.style.transform = `translateX(100%)`;
+        head.style.color = 'white';
+        menu_btn.style.filter = 'invert(0%)';
+        navbar.style.backgroundColor = ' rgb(49, 49, 49)';
+        body.style.overflowY = 'auto';
+    }
+    menu_toggled = !menu_toggled;
+}
+
+$('.nav_btns').click(function(){
+    show_menu()
+})
