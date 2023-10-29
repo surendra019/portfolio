@@ -5,6 +5,9 @@
         left: 50px;
         top: 100px;
     }
+    /* #navbar::before {
+        padding-top: 20px;
+    } */
     #navbar {
         /* padding-top: 20px; */
         flex-direction: column;
@@ -21,7 +24,10 @@
         width: 100%;
         align-items: center;
         justify-content: center;
-
+        flex-direction: column;
+        background-color: grey;
+        margin-top: 30px;
+        display: none;
         /* position: relative; */
         /* left: 800px; */
     }
@@ -35,7 +41,9 @@
     }
     footer div#footer-left{
         font-size: 15px;
-        }
+    
+    }
+
         
     
 }
