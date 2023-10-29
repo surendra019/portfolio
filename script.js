@@ -1,35 +1,7 @@
-let anim= lottie.loadAnimation({
-    container: document.getElementById('lottie_cont'),
-    autoplay: true,
-    renderer: 'svg',
-    path: 'laptop_lottie.json',
-    loop: true})
 
 
-    let nav_headings = document.getElementsByClassName('nav_headings');
+let nav_headings = document.getElementsByClassName('nav_headings');
 let arr = Array.from(nav_headings);
-let svg_main = document.getElementById('svg_main');
-let polyline = document.getElementById('polyline');
-let line = document.getElementById('line');
-
-
-
-// let points = polyline.getAttribute("points");
-
-// arr.forEach((element)=>{
-//     let el_rect = element.getBoundingClientRect();
-//     console.log(el_rect.y)
-    
-//     let new_points = points+=` ${el_rect.x-10}, ${el_rect.y+el_rect.height}`
-    
-//     console.log(new_points);
-//     polyline.setAttribute(`points`, new_points);
-
-//     })
-// let p = points+=" 30, 100000";
-// polyline.setAttribute("points", p);
-
-
 
 
 my_job = document.getElementById('myjob');
@@ -78,18 +50,6 @@ const animate_jobs = ()=>{
 
 animate_jobs();
 
-
-
-
-
-
-// function setBackgroundText(){
-//     let bg_texts_all = document.getElementsByClassName('background_text');
-//     let arr_bg_texts_all = Array.from(bg_texts_all);
-
-
-// }
-
 let project_class = document.getElementsByClassName('project');
 let project_class_arr = Array.from(project_class)
 
@@ -115,65 +75,65 @@ function hide_popup(){
 
 
 
-let v_container = document.getElementById('visible-container');
+// let v_container = document.getElementById('visible-container');
 
-arrange_slides(v_container);
+// arrange_slides(v_container);
 
-function arrange_slides(visible_contanier){
-    let children = Array.from(visible_contanier.children);
-    let start_translate = 0;
+// function arrange_slides(visible_contanier){
+//     let children = Array.from(visible_contanier.children);
+//     let start_translate = 0;
 
-    children.forEach((el)=>{
-        let left_s = children.indexOf(el)*100
-        el.style.left = `${left_s}%`
-        print(el.style.left);
-    })
+//     children.forEach((el)=>{
+//         let left_s = children.indexOf(el)*100
+//         el.style.left = `${left_s}%`
+//         print(el.style.left);
+//     })
 
-}
-let counter = 0;
+// }
+// let counter = 0;
 
 
 
-function slide_left(){
+// function slide_left(){
 
-    let img_count = Array.from(v_container.children).length
-    console.log(Math.abs(counter));
-    console.log(Math.abs(img_count));
+//     let img_count = Array.from(v_container.children).length
+//     console.log(Math.abs(counter));
+//     console.log(Math.abs(img_count));
 
-    if (Math.abs(counter)<Math.abs(img_count)-1){
-        counter--;
-        Array.from(v_container.children).forEach((el)=>{
-            el.style.transform = `translateX(${counter*100}%)`
+//     if (Math.abs(counter)<Math.abs(img_count)-1){
+//         counter--;
+//         Array.from(v_container.children).forEach((el)=>{
+//             el.style.transform = `translateX(${counter*100}%)`
             
             
-        })
+//         })
     
-}
-}
+// }
+// }
 
-function slide_right(){
+// function slide_right(){
 
 
-    let img_count = Array.from(v_container.children).length
-    console.log(Math.abs(counter));
-    console.log(Math.abs(img_count));
+//     let img_count = Array.from(v_container.children).length
+//     console.log(Math.abs(counter));
+//     console.log(Math.abs(img_count));
 
-    if (Math.abs(counter)>0){
-        counter++;
-        Array.from(v_container.children).forEach((el)=>{
-            el.style.transform = `translateX(${counter*100}%)`;
+//     if (Math.abs(counter)>0){
+//         counter++;
+//         Array.from(v_container.children).forEach((el)=>{
+//             el.style.transform = `translateX(${counter*100}%)`;
         
-        })
-    }
-}
+//         })
+//     }
+// }
 
-const setPopupHeight =() =>{
-    let hei = document.documentElement.scrollHeight;
+// const setPopupHeight =() =>{
+//     let hei = document.documentElement.scrollHeight;
 
-    let popup = document.getElementById('popup');
+//     let popup = document.getElementById('popup');
 
-    popup.style.height = `${hei}px`;
-}
+//     popup.style.height = `${hei}px`;
+// }
 
-// setPopupHeight()
+// // setPopupHeight()
 

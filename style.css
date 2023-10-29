@@ -28,7 +28,7 @@ color: white;
     height:auto;
     width: 100%;
     
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
  
     display: flex;
     flex-direction: column;
