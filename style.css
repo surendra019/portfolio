@@ -20,16 +20,16 @@
 html{
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 
 body {
 color: white;
+overflow-y: auto;
     font-family: var(--font_fam1), var(--font_fam2);
     height:auto;
     width: 100%;
-    
-    /* overflow-x: hidden; */
- 
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
  

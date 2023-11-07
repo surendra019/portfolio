@@ -3,7 +3,8 @@
     height: 100vh;
     z-index: 100;
     position: fixed;
-    transform: translateX(100%);
+    left: 100%;
+    /* transform: translateX(100%); */
     background-color: #9400FF;
     transition-property: transform;
     transition-duration: .5s;

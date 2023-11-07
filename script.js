@@ -149,18 +149,18 @@ let menu_toggled = false
 
 function show_menu(){
     if (!menu_toggled){
-        menu.style.transform = `translateX(0%)`;
-        head.style.color = 'black';;
+        menu.style.transform = `translateX(-100%)`;
+        head.style.color = 'black';
         menu_btn.style.filter = 'invert(100%)';
         navbar.style.backgroundColor = 'grey';
-        body.style.overflowY = 'hidden';
+        body.style.overflowY = 'auto';
         
     }else{
-        menu.style.transform = `translateX(100%)`;
+        menu.style.transform = `translateX(0%)`;
         head.style.color = 'white';
         menu_btn.style.filter = 'invert(0%)';
         navbar.style.backgroundColor = ' rgb(49, 49, 49)';
-        body.style.overflowY = 'auto';
+        body.style.overflowY = 'hidden';
     }
     menu_toggled = !menu_toggled;
 }

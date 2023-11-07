@@ -17,7 +17,7 @@
     .navbar-right{
         justify-content: center;
     }
-    
+  
     #navbar ul {
         display: flex;
         margin: auto;
@@ -25,7 +25,7 @@
         align-items: center;
         height: 100vh;
         justify-content: center;
-        transform: translateX(100%);
+        left: 100%;
         flex-direction: column;
         background-color: grey;
 
